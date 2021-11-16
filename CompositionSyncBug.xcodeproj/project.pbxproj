@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D8331C3273C8D34002CF14D /* ExportSyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8331B3273C8D32002CF14D /* ExportSyncApp.swift */; };
-		4D8331C4273C8D34002CF14D /* ExportSyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8331B3273C8D32002CF14D /* ExportSyncApp.swift */; };
+		4D8331C3273C8D34002CF14D /* CompositionSyncBugApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8331B3273C8D32002CF14D /* CompositionSyncBugApp.swift */; };
+		4D8331C4273C8D34002CF14D /* CompositionSyncBugApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8331B3273C8D32002CF14D /* CompositionSyncBugApp.swift */; };
 		4D8331C5273C8D34002CF14D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8331B4273C8D32002CF14D /* ContentView.swift */; };
 		4D8331C6273C8D34002CF14D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8331B4273C8D32002CF14D /* ContentView.swift */; };
 		4D8331C7273C8D34002CF14D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D8331B5273C8D34002CF14D /* Assets.xcassets */; };
@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4D8331B3273C8D32002CF14D /* ExportSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSyncApp.swift; sourceTree = "<group>"; };
+		4D8331B3273C8D32002CF14D /* CompositionSyncBugApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionSyncBugApp.swift; sourceTree = "<group>"; };
 		4D8331B4273C8D32002CF14D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D8331B5273C8D34002CF14D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D8331BA273C8D34002CF14D /* CompositionSyncBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompositionSyncBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +37,8 @@
 		4D8331DA273F1120002CF14D /* OneMinute8KHz.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = OneMinute8KHz.mov; path = ../../../Documents/AVSync/QT/OneMinute8KHz.mov; sourceTree = "<group>"; };
 		4D8331DD273F125D002CF14D /* OneMinute16KHz.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = OneMinute16KHz.mov; sourceTree = "<group>"; };
 		4D9614412742F78700B7AB8D /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		4D96144A2744660900B7AB8D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4D96144B2744660900B7AB8D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,8 @@
 		4D8331AD273C8D32002CF14D = {
 			isa = PBXGroup;
 			children = (
+				4D96144B2744660900B7AB8D /* LICENSE */,
+				4D96144A2744660900B7AB8D /* README.md */,
 				4D8331B2273C8D32002CF14D /* Shared */,
 				4D8331C1273C8D34002CF14D /* macOS */,
 				4D8331BB273C8D34002CF14D /* Products */,
@@ -70,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				4D9614412742F78700B7AB8D /* AppModel.swift */,
-				4D8331B3273C8D32002CF14D /* ExportSyncApp.swift */,
+				4D8331B3273C8D32002CF14D /* CompositionSyncBugApp.swift */,
 				4D8331B4273C8D32002CF14D /* ContentView.swift */,
 				4D8331D1273EDC18002CF14D /* Exporter.swift */,
 				4D8331B5273C8D34002CF14D /* Assets.xcassets */,
@@ -166,8 +170,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4D8331B9273C8D34002CF14D /* CompositionSyncBug (iOS) */,
 				4D8331BF273C8D34002CF14D /* CompositionSyncBug (macOS) */,
+				4D8331B9273C8D34002CF14D /* CompositionSyncBug (iOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -204,7 +208,7 @@
 			files = (
 				4D8331C5273C8D34002CF14D /* ContentView.swift in Sources */,
 				4D8331D2273EDC18002CF14D /* Exporter.swift in Sources */,
-				4D8331C3273C8D34002CF14D /* ExportSyncApp.swift in Sources */,
+				4D8331C3273C8D34002CF14D /* CompositionSyncBugApp.swift in Sources */,
 				4D9614422742F78700B7AB8D /* AppModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,7 +219,7 @@
 			files = (
 				4D8331C6273C8D34002CF14D /* ContentView.swift in Sources */,
 				4D8331D3273EDC18002CF14D /* Exporter.swift in Sources */,
-				4D8331C4273C8D34002CF14D /* ExportSyncApp.swift in Sources */,
+				4D8331C4273C8D34002CF14D /* CompositionSyncBugApp.swift in Sources */,
 				4D9614432742F78700B7AB8D /* AppModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,7 +359,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.mmhmm.ExportSync;
+				PRODUCT_BUNDLE_IDENTIFIER = app.mmhmm.CompositionSyncBug;
 				PRODUCT_NAME = CompositionSyncBug;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -385,7 +389,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.mmhmm.ExportSync;
+				PRODUCT_BUNDLE_IDENTIFIER = app.mmhmm.CompositionSyncBug;
 				PRODUCT_NAME = CompositionSyncBug;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -415,7 +419,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.mmhmm.ExportSync;
+				PRODUCT_BUNDLE_IDENTIFIER = app.mmhmm.CompositionSyncBug;
 				PRODUCT_NAME = CompositionSyncBug;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -443,7 +447,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.mmhmm.ExportSync;
+				PRODUCT_BUNDLE_IDENTIFIER = app.mmhmm.CompositionSyncBug;
 				PRODUCT_NAME = CompositionSyncBug;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;

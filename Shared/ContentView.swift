@@ -92,6 +92,7 @@ struct FileInfoView: View {
         .padding()
     }
     func selectFile()  {
+#if os(macOS)
         guard let window:NSWindow = NSApp.keyWindow else {return}
         let panel = useSavePanel ? NSSavePanel():NSOpenPanel()
         panel.title = "Select file to combine"
@@ -101,9 +102,16 @@ struct FileInfoView: View {
             guard let url = panel.url else {return}
             fileURL = url.standardizedFileURL
         }
+#else
+        // TODO: implement this for iOS
+#endif
     }
     
     func openFile() {
+#if os(macOS)
         NSWorkspace.shared.open(fileURL)
+#else
+        // TODO: implement this for iOS
+#endif
     }
 }

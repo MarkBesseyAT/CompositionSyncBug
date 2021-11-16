@@ -1,6 +1,6 @@
 //
 //  AppModel.swift
-//  ExportSync
+//  CompositionSyncBug
 //
 //  Created by Mark Bessey on 11/15/21.
 //

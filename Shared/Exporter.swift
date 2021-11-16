@@ -1,11 +1,10 @@
 //
 //  Exporter.swift
-//  ExportSync
+//  CompositionSyncBug
 //
 //  Created by Mark Bessey on 11/12/21.
 //
 
-import Cocoa
 import AVFoundation
 
 /// Concatenate two movies
