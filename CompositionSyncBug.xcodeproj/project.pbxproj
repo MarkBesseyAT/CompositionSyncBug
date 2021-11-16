@@ -34,7 +34,7 @@
 		4D8331C2273C8D34002CF14D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		4D8331D1273EDC18002CF14D /* Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporter.swift; sourceTree = "<group>"; };
 		4D8331D4273F110B002CF14D /* FiveMinutes48KHz.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = FiveMinutes48KHz.mov; sourceTree = "<group>"; };
-		4D8331DA273F1120002CF14D /* OneMinute8KHz.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = OneMinute8KHz.mov; path = ../../../Documents/AVSync/QT/OneMinute8KHz.mov; sourceTree = "<group>"; };
+		4D8331DA273F1120002CF14D /* OneMinute8KHz.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = OneMinute8KHz.mov; sourceTree = "<group>"; };
 		4D8331DD273F125D002CF14D /* OneMinute16KHz.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = OneMinute16KHz.mov; sourceTree = "<group>"; };
 		4D9614412742F78700B7AB8D /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		4D96144A2744660900B7AB8D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
