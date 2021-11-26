@@ -9,12 +9,14 @@ import AVFoundation
 
 /// Concatenate two movies
 ///
-func concatenateMovies(sources: [URL], destination: URL) -> AVAssetExportSession {
+func concatenateMovies(sources: [URL], destination: URL, useTap:Bool) -> AVAssetExportSession {
     // create composition
     let composition = AVMutableComposition()
     var insertTime = CMTime(value: 0, timescale: 30)
     var instructions:[AVVideoCompositionInstructionProtocol] = []
     var videoSize = CGSize.zero
+    var mixParameters:[AVAudioMixInputParameters] = []
+    
     // iterate over sources
     for source in sources {
         // create 2 composition tracks for each source (one video, one audio)
@@ -46,6 +48,15 @@ func concatenateMovies(sources: [URL], destination: URL) -> AVAssetExportSession
         // insert tracks
         try! compositionVideoTrack?.insertTimeRange(videoRange, of: assetVideoTrack, at: insertTime)
         try! compositionAudioTrack?.insertTimeRange(audioRange, of: assetAudioTrack, at: insertTime)
+        
+        // create tap-enabled mix parameters
+        if useTap {
+            mixParameters.append(parametersForTrack(compositionAudioTrack))
+        } else {
+            let trackMixParameters = AVMutableAudioMixInputParameters(track: compositionAudioTrack)
+            trackMixParameters.setVolumeRamp(fromStartVolume: 1.0, toEndVolume: 1.0, timeRange: CMTimeRange(start: insertTime, duration: audioRange.duration))
+            mixParameters.append(trackMixParameters)
+        }
         // There cannot be any gaps between the video tracks, or the composition will fail, so we will
         // insert the next video segment directly after the first.
         // It turns out not to matter if there are gaps or overlap in the audio tracks, because
@@ -74,7 +85,11 @@ func concatenateMovies(sources: [URL], destination: URL) -> AVAssetExportSession
     exportSession.outputFileType = .mp4
     exportSession.shouldOptimizeForNetworkUse = true
     exportSession.videoComposition = videoComposition
-    exportSession.audioMix = AVAudioMix()
+    let mix = AVMutableAudioMix()
+    mix.inputParameters = mixParameters
+    exportSession.audioMix = mix
+    //exportSession.canPerformMultiplePassesOverSourceMediaData = true
+    exportSession.audioTimePitchAlgorithm = .spectral
     exportSession.exportAsynchronously {
         if (exportSession.status == .completed) {
             print("done")
