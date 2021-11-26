@@ -27,6 +27,8 @@
 		4D9614632745EF8D00B7AB8D /* TapAudioProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9614612745EF8D00B7AB8D /* TapAudioProcessor.m */; };
 		4D9614662747054600B7AB8D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9614652747054600B7AB8D /* AVFoundation.framework */; };
 		4D9614682747055400B7AB8D /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9614672747055400B7AB8D /* MediaToolbox.framework */; };
+		4D9614E927519BF400B7AB8D /* FileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9614E827519BF400B7AB8D /* FileInfoView.swift */; };
+		4D9614EA27519BF400B7AB8D /* FileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9614E827519BF400B7AB8D /* FileInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,7 @@
 		4D9614612745EF8D00B7AB8D /* TapAudioProcessor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapAudioProcessor.m; sourceTree = "<group>"; };
 		4D9614652747054600B7AB8D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4D9614672747055400B7AB8D /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
+		4D9614E827519BF400B7AB8D /* FileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 				4D9614412742F78700B7AB8D /* AppModel.swift */,
 				4D8331B3273C8D32002CF14D /* CompositionSyncBugApp.swift */,
 				4D8331B4273C8D32002CF14D /* ContentView.swift */,
+				4D9614E827519BF400B7AB8D /* FileInfoView.swift */,
 				4D8331D1273EDC18002CF14D /* Exporter.swift */,
 				4D9614602745EF8D00B7AB8D /* TapAudioProcessor.h */,
 				4D9614612745EF8D00B7AB8D /* TapAudioProcessor.m */,
@@ -238,6 +242,7 @@
 				4D8331C5273C8D34002CF14D /* ContentView.swift in Sources */,
 				4D8331D2273EDC18002CF14D /* Exporter.swift in Sources */,
 				4D8331C3273C8D34002CF14D /* CompositionSyncBugApp.swift in Sources */,
+				4D9614EA27519BF400B7AB8D /* FileInfoView.swift in Sources */,
 				4D9614422742F78700B7AB8D /* AppModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +255,7 @@
 				4D8331C6273C8D34002CF14D /* ContentView.swift in Sources */,
 				4D8331D3273EDC18002CF14D /* Exporter.swift in Sources */,
 				4D8331C4273C8D34002CF14D /* CompositionSyncBugApp.swift in Sources */,
+				4D9614E927519BF400B7AB8D /* FileInfoView.swift in Sources */,
 				4D9614432742F78700B7AB8D /* AppModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
